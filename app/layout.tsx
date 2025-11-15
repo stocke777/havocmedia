@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Menu, X, Play, Zap, Star } from "lucide-react";
+
 import "./globals.css";
+
+import {
+  COMPANY_NAME,
+  NAV_1,
+  NAV_1_LINK,
+  NAV_2,
+  NAV_2_LINK,
+} from "./constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +37,45 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="fixed w-full z-50 bg-black/80 backdrop-blur-lg border-b border-purple-900/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between h-16">
+              {/* Logo */}
+              <a href="/" className="flex items-center">
+                <div className="flex items-center gap-2">
+                  <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-900 rounded-lg flex items-center justify-center">
+                    <Play className="w-6 h-6" fill="white" />
+                  </div>
+                  <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+                    {COMPANY_NAME}
+                  </span>
+                </div>
+              </a>
+              {/* Centered Navigation */}
+              <span className="absolute left-1/2 top-0 transform -translate-x-1/2 h-16 flex items-center space-x-8">
+                <a
+                  href={NAV_1_LINK}
+                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20"
+                >
+                  {NAV_1}
+                </a>
+                <span className="w-px h-6 bg-purple-700/40 mx-2" />
+                <a
+                  href={NAV_2_LINK}
+                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20"
+                >
+                  {NAV_2}
+                </a>
+              </span>
+              {/* Desktop Navigation */}
+              <div className="hidden md:flex items-center space-x-8">
+                <button className="cursor-pointer px-6 py-2 bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg hover:from-purple-700 hover:to-purple-900 transition-all duration-200 shadow-lg shadow-purple-900/50">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
         {children}
       </body>
     </html>
