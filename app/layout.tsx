@@ -10,6 +10,10 @@ import {
   NAV_1_LINK,
   NAV_2,
   NAV_2_LINK,
+  NAV_3,
+  NAV_3_LINK,
+  NAV_4,
+  NAV_4_LINK,
 } from "./constants";
 
 const geistSans = Geist({
@@ -66,6 +70,22 @@ export default function RootLayout({
                 >
                   {NAV_2}
                 </a>
+                <span className="w-px h-6 bg-purple-700/40 mx-2" />
+                <a
+                  href={NAV_4_LINK}
+                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20"
+                >
+                  {NAV_4}
+                </a>
+                <span className="w-px h-6 bg-purple-700/40 mx-2" />
+
+                <a
+                  href={NAV_3_LINK}
+                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20"
+                >
+                  {NAV_3}
+                </a>
+                
               </span>
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">

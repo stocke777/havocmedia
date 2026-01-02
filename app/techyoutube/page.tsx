@@ -8,80 +8,37 @@ import {
   Calendar,
   Award,
 } from "lucide-react";
+import AGI from "./assets/AGI.png"
+// import AGI2 from "./assets/agi2.png";
 
 export default function YouTubeShowcase() {
   const stats = [
     {
       icon: <Users className="w-6 h-6" />,
       label: "Subscribers",
-      value: "125K",
+      value: "400",
       color: "from-red-500 to-pink-600",
     },
     {
       icon: <Eye className="w-6 h-6" />,
       label: "Total Views",
-      value: "5.2M",
+      value: "50k+",
       color: "from-purple-500 to-purple-700",
     },
     {
       icon: <ThumbsUp className="w-6 h-6" />,
-      label: "Likes",
-      value: "328K",
+      label: "Promotions",
+      value: "5",
       color: "from-blue-500 to-cyan-600",
     },
     {
       icon: <Play className="w-6 h-6" />,
       label: "Videos",
-      value: "247",
+      value: "140+",
       color: "from-green-500 to-emerald-600",
     },
   ];
 
-  const videos = [
-    {
-      title: "Amazing Cinematic Masterpiece",
-      views: "1.2M",
-      date: "2 weeks ago",
-      duration: "12:34",
-      thumbnail: "bg-gradient-to-br from-purple-600 via-pink-600 to-red-600",
-    },
-    {
-      title: "Behind The Scenes: Production Magic",
-      views: "856K",
-      date: "1 month ago",
-      duration: "18:45",
-      thumbnail: "bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600",
-    },
-    {
-      title: "Creative Process Breakdown",
-      views: "623K",
-      date: "2 months ago",
-      duration: "15:20",
-      thumbnail: "bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-600",
-    },
-    {
-      title: "Top 10 Video Editing Tips",
-      views: "945K",
-      date: "3 months ago",
-      duration: "22:15",
-      thumbnail: "bg-gradient-to-br from-green-600 via-emerald-600 to-teal-600",
-    },
-    {
-      title: "Epic Collaboration Project",
-      views: "1.5M",
-      date: "4 months ago",
-      duration: "25:30",
-      thumbnail: "bg-gradient-to-br from-orange-600 via-red-600 to-pink-600",
-    },
-    {
-      title: "Gear Review: Best Camera Setup",
-      views: "712K",
-      date: "5 months ago",
-      duration: "16:42",
-      thumbnail:
-        "bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-600",
-    },
-  ];
 
   const playlists = [
     {
@@ -109,18 +66,18 @@ export default function YouTubeShowcase() {
   const achievements = [
     {
       icon: <Award className="w-8 h-8" />,
-      title: "Silver Play Button",
-      description: "100K Subscribers",
+      title: "Promotions",
+      description: "5 Promotions",
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Top Creator",
-      description: "Top 5% in category",
+      title: "Latest Insights",
+      description: "Always Updated",
     },
     {
       icon: <Calendar className="w-8 h-8" />,
-      title: "3 Years Strong",
-      description: "Content since 2021",
+      title: "6 months Strong",
+      description: "Content since June 2025",
     },
   ];
 
@@ -151,19 +108,24 @@ export default function YouTubeShowcase() {
             {/* Channel Details */}
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
-                Creative Media Studio
+                Jaivardhan_Deshwal
               </h1>
               <p className="text-gray-400 mb-4">
-                @creativemedia • Creating stunning visual stories
+                @Jaivardhan_Deshwal • Code | AI | Tech discussions
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <button className="px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg shadow-red-900/50 flex items-center gap-2 font-semibold">
+                <a href="https://www.youtube.com/@Jaivardhan_Deshwal" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg shadow-red-900/50 flex items-center gap-2 font-semibold">
                   <Bell className="w-5 h-5" />
                   Subscribe
-                </button>
-                <button className="px-6 py-3 bg-white/10 border border-purple-500/30 rounded-full hover:bg-white/20 transition-all duration-200 backdrop-blur-sm font-semibold">
+                </a>
+                <a
+                  href="https://www.youtube.com/@Jaivardhan_Deshwal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-white/10 border border-purple-500/30 rounded-full hover:bg-white/20 transition-all duration-200 backdrop-blur-sm font-semibold"
+                >
                   View Channel
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -193,14 +155,12 @@ export default function YouTubeShowcase() {
               About the Channel
             </h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Welcome to Creative Media Studio! We create high-quality cinematic
-              content, tutorials, and behind-the-scenes looks at our production
-              process. Join our community of 125K+ creators and filmmakers who
-              are passionate about visual storytelling.
+              Trying out new projects so thought why not record as well. Might find some interesting people along the way.
+              <br />Connect if you wanna share or collab!
             </p>
             <div className="flex flex-wrap gap-3">
               <span className="px-4 py-2 bg-purple-600/20 border border-purple-500/30 rounded-full text-sm">
-                Cinematography
+                Tech Discussions
               </span>
               <span className="px-4 py-2 bg-purple-600/20 border border-purple-500/30 rounded-full text-sm">
                 Video Editing
@@ -209,7 +169,7 @@ export default function YouTubeShowcase() {
                 Tutorials
               </span>
               <span className="px-4 py-2 bg-purple-600/20 border border-purple-500/30 rounded-full text-sm">
-                Behind The Scenes
+                AI Automations
               </span>
             </div>
           </div>
@@ -238,30 +198,33 @@ export default function YouTubeShowcase() {
           {/* Content */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {videos.map((video, index) => (
-              <div key={index} className="group cursor-pointer">
-                <div className="relative mb-3 overflow-hidden rounded-2xl">
-                  <div
-                    className={`aspect-video ${video.thumbnail} flex items-center justify-center group-hover:scale-105 transition-transform duration-300`}
-                  >
-                    <div className="w-16 h-16 bg-black/60 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-black/80 transition-colors">
-                      <Play className="w-8 h-8" fill="white" />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-2 right-2 px-2 py-1 bg-black/80 backdrop-blur-sm rounded text-xs font-semibold">
-                    {video.duration}
-                  </div>
-                </div>
-                <h3 className="font-bold mb-2 group-hover:text-purple-400 transition-colors">
-                  {video.title}
-                </h3>
-                <div className="flex items-center gap-2 text-sm text-gray-400">
-                  <span>{video.views} views</span>
-                  <span>•</span>
-                  <span>{video.date}</span>
-                </div>
-              </div>
-            ))}
+
+            {[
+  "Nog8CnVDlqg",
+  "we3mtv73TiM",
+  "DnkBMqgsifY",
+  "vp6gz02rwxI",
+  "Z5l36LpjVqY",
+  "Gwnu8AmOrTk",
+  "pzI3UrOSaUA",
+].map((videoId, index) => (
+  <div
+    key={index}
+    className="group bg-purple-900/20 border border-purple-500/20 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300"
+  >
+    <div className="aspect-video">
+      <iframe
+        className="w-full h-full"
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title={`YouTube video player ${index + 1}`}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+))}
+
+
           </div>
         </div>
       </div>
@@ -276,13 +239,12 @@ export default function YouTubeShowcase() {
                 Join Our Creative Community
               </h2>
               <p className="text-xl text-gray-400 mb-8">
-                Subscribe for weekly videos on cinematography, editing tips, and
-                behind-the-scenes content.
+                Subscribe for weekly videos on AI updates, discussions and tutorials to keep yourself ahead of competition
               </p>
-              <button className="px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-xl shadow-red-900/50 text-lg font-semibold flex items-center gap-2 mx-auto">
+              <a href="https://www.youtube.com/@Jaivardhan_Deshwal" className="px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-xl shadow-red-900/50 text-lg font-semibold flex items-center gap-2 mx-auto">
                 <Bell className="w-6 h-6" />
                 Subscribe Now
-              </button>
+              </a>
             </div>
           </div>
         </div>

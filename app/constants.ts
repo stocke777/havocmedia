@@ -4,6 +4,10 @@ export const NAV_1 = "Tech Youtube";
 export const NAV_1_LINK = "/techyoutube";
 export const NAV_2 = "NCR Car Connect";
 export const NAV_2_LINK = "/ncrcarconnect";
+export const NAV_3 = "Blog";
+export const NAV_3_LINK = "/blog";
+export const NAV_4 = "Medium";
+export const NAV_4_LINK = "/medium";
 
 export const COLORS = {
   bg: "bg-black",
