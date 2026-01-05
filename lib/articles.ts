@@ -1,0 +1,35 @@
+import whyBacklinking from "@/content/articles/why-backlinking-and-online-content-still-matter";
+import socialMedia from "@/content/articles/how-social-media-marketing-helps-small-businesses-in-india";
+import delhiSmallBusinesses from "@/content/articles/how-delhi-small-businesses-use-social-media-for-growth";
+import smallInfluencers from "@/content/articles/using-small-influencers-for-local-brand-growth";
+import youtubeInstagram from "@/content/articles/youtube-vs-instagram-what-actually-works";
+import viralReel from "@/content/articles/why-one-viral-reel-beats-twenty-average-ones";
+import tenKFollowers from "@/content/articles/why-10k-followers-can-be-better-than-100k";
+
+export const allArticles = [
+  whyBacklinking,
+  socialMedia,
+  delhiSmallBusinesses,
+  smallInfluencers,
+  youtubeInstagram,
+  viralReel,
+  tenKFollowers
+];
+
+// For article list page
+export function getArticlesMeta() {
+  return allArticles.map(({ slug, title, author, date, category, readTime, excerpt }) => ({
+    slug,
+    title,
+    author,
+    date,
+    category,
+    readTime,
+    excerpt
+  }));
+}
+
+// For dynamic route
+export function getArticleBySlug(slug: string) {
+  return allArticles.find(article => article.slug === slug);
+}

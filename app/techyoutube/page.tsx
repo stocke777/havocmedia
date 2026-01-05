@@ -8,10 +8,64 @@ import {
   Calendar,
   Award,
 } from "lucide-react";
-import AGI from "./assets/AGI.png"
-// import AGI2 from "./assets/agi2.png";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+
+  title: "Jaivardhan Deshwal - YouTube Channel | Havocmedia - AI, Tech & Tutorials",
+  description: "Subscribe to Jaivardhan Deshwal's YouTube channel for AI updates, tech discussions, coding tutorials, and video editing tips. Part of Havocmedia. Join our creative community!",
+  keywords: [
+    "Jaivardhan Deshwal",
+    "Havocmedia",
+    "YouTube channel",
+    "AI tutorials",
+    "tech discussions",
+    "coding tutorials",
+    "video editing",
+    "AI automations",
+    "technology content creator"
+  ],
+  authors: [{ name: "Jaivardhan Deshwal" }],
+  creator: "Jaivardhan Deshwal",
+  publisher: "Havocmedia",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    type: "profile",
+    title: "Jaivardhan Deshwal - YouTube Channel | Havocmedia",
+    description: "Subscribe for weekly videos on AI updates, tech discussions and tutorials. Join our creative community at Havocmedia!",
+    url: "https://yourwebsite.com/youtube",
+    siteName: "Havocmedia",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80",
+        width: 1200,
+        height: 675,
+        alt: "Jaivardhan Deshwal YouTube Channel - Havocmedia Tech Content",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jaivardhan Deshwal - YouTube Channel | Havocmedia",
+    description: "Subscribe for AI updates, tech discussions and coding tutorials. Join our creative community!",
+    creator: "@deshwaljaivardhan",
+    images: ["https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80"],
+  },
+  alternates: {
+    canonical: "https://yourwebsite.com/youtube",
+  },
+};
+
 
 export default function YouTubeShowcase() {
+  const channelUrl = "https://www.youtube.com/@Jaivardhan_Deshwal";
   const stats = [
     {
       icon: <Users className="w-6 h-6" />,
@@ -200,29 +254,29 @@ export default function YouTubeShowcase() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 
             {[
-  "Nog8CnVDlqg",
-  "we3mtv73TiM",
-  "DnkBMqgsifY",
-  "vp6gz02rwxI",
-  "Z5l36LpjVqY",
-  "Gwnu8AmOrTk",
-  "pzI3UrOSaUA",
-].map((videoId, index) => (
-  <div
-    key={index}
-    className="group bg-purple-900/20 border border-purple-500/20 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300"
-  >
-    <div className="aspect-video">
-      <iframe
-        className="w-full h-full"
-        src={`https://www.youtube.com/embed/${videoId}`}
-        title={`YouTube video player ${index + 1}`}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    </div>
-  </div>
-))}
+              "Nog8CnVDlqg",
+              "we3mtv73TiM",
+              "DnkBMqgsifY",
+              "vp6gz02rwxI",
+              "Z5l36LpjVqY",
+              "Gwnu8AmOrTk",
+              "pzI3UrOSaUA",
+            ].map((videoId, index) => (
+              <div
+                key={index}
+                className="group bg-purple-900/20 border border-purple-500/20 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300"
+              >
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${videoId}`}
+                    title={`YouTube video player ${index + 1}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            ))}
 
 
           </div>
@@ -230,25 +284,35 @@ export default function YouTubeShowcase() {
       </div>
 
       {/* Footer CTA */}
-      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-purple-950/20">
+      <footer className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-purple-950/20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-br from-purple-900/30 to-purple-950/20 rounded-3xl p-12 border border-purple-500/20 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-pink-600/5"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-pink-600/5" aria-hidden="true"></div>
             <div className="relative">
               <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
-                Join Our Creative Community
+                Join Our Creative Community at Havocmedia
               </h2>
               <p className="text-xl text-gray-400 mb-8">
-                Subscribe for weekly videos on AI updates, discussions and tutorials to keep yourself ahead of competition
+                Subscribe to <strong>Jaivardhan Deshwal</strong> for weekly videos on AI updates, discussions and tutorials to keep yourself ahead of competition
               </p>
-              <a href="https://www.youtube.com/@Jaivardhan_Deshwal" className="px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-xl shadow-red-900/50 text-lg font-semibold flex items-center gap-2 mx-auto">
-                <Bell className="w-6 h-6" />
+              <a
+                href={channelUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-xl shadow-red-900/50 text-lg font-semibold items-center gap-2"
+                aria-label="Subscribe to Jaivardhan Deshwal's YouTube Channel Now"
+              >
+                <Bell className="w-6 h-6" aria-hidden="true" />
                 Subscribe Now
               </a>
             </div>
           </div>
         </div>
-      </div>
+
+        <div className="text-center text-gray-500 text-sm mt-8">
+          <p>🎬 Creating tech content, one video at a time - Havocmedia © 2025</p>
+        </div>
+      </footer>
     </div>
   );
 }

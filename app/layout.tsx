@@ -59,21 +59,21 @@ export default function RootLayout({
               <span className="absolute left-1/2 top-0 transform -translate-x-1/2 h-16 flex items-center space-x-8">
                 <a
                   href={NAV_1_LINK}
-                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20"
+                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20 whitespace-nowrap"
                 >
                   {NAV_1}
                 </a>
                 <span className="w-px h-6 bg-purple-700/40 mx-2" />
                 <a
                   href={NAV_2_LINK}
-                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20"
+                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20 whitespace-nowrap"
                 >
                   {NAV_2}
                 </a>
                 <span className="w-px h-6 bg-purple-700/40 mx-2" />
                 <a
                   href={NAV_4_LINK}
-                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20"
+                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20  whitespace-nowrap"
                 >
                   {NAV_4}
                 </a>
@@ -81,11 +81,11 @@ export default function RootLayout({
 
                 <a
                   href={NAV_3_LINK}
-                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20"
+                  className="text-purple-400 font-semibold text-lg px-3 py-1 rounded hover:bg-purple-900/30 transition-colors duration-200 shadow-md shadow-purple-900/20 whitespace-nowrap"
                 >
                   {NAV_3}
                 </a>
-                
+
               </span>
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">
