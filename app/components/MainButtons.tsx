@@ -48,26 +48,25 @@ export const MainButtons = () => {
               {/* Text Content */}
               <div className="text-center mb-8">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-red-300 bg-clip-text text-transparent">
-                  YouTube Channel
+                  Tech YouTube Channel
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  Explore our creative media studio with stunning
-                  cinematography, tutorials, and behind-the-scenes content
+                  Subscribe to <strong>Jaivardhan Deshwal</strong> for weekly videos on AI updates, discussions and tutorials to keep yourself ahead of competition
                 </p>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-red-400">125K</div>
+                  <div className="text-2xl font-bold text-red-400">--</div>
                   <div className="text-xs text-gray-500">Subscribers</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-red-400">5.2M</div>
+                  <div className="text-2xl font-bold text-red-400">--</div>
                   <div className="text-xs text-gray-500">Views</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-red-400">247</div>
+                  <div className="text-2xl font-bold text-red-400">--</div>
                   <div className="text-xs text-gray-500">Videos</div>
                 </div>
               </div>
@@ -108,27 +107,26 @@ export const MainButtons = () => {
               {/* Text Content */}
               <div className="text-center mb-8">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">
-                  AutoVerse Channel
+                  NCR Car Connect Channel
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  Discover supercar reviews, track days, and automotive
-                  excellence on YouTube & Instagram
+                  Subscribe on YouTube and follow on Instagram for genuine opinion on cars in Delhi-NCR, buying guides, tips and tricks.
                 </p>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-purple-400">450K</div>
+                  <div className="text-2xl font-bold text-purple-400">--</div>
                   <div className="text-xs text-gray-500">YouTube</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-purple-400">280K</div>
+                  <div className="text-2xl font-bold text-purple-400">--</div>
                   <div className="text-xs text-gray-500">Instagram</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-purple-400">
-                    12.5M
+                    --
                   </div>
                   <div className="text-xs text-gray-500">Views</div>
                 </div>
