@@ -5,6 +5,8 @@ import smallInfluencers from "@/content/articles/using-small-influencers-for-loc
 import youtubeInstagram from "@/content/articles/youtube-vs-instagram-what-actually-works";
 import viralReel from "@/content/articles/why-one-viral-reel-beats-twenty-average-ones";
 import tenKFollowers from "@/content/articles/why-10k-followers-can-be-better-than-100k";
+import youtubeEnshitification from "@/content/articles/how-youtube-enshitification-actually-works";
+
 
 export const allArticles = [
   whyBacklinking,
@@ -13,12 +15,13 @@ export const allArticles = [
   smallInfluencers,
   youtubeInstagram,
   viralReel,
-  tenKFollowers
+  tenKFollowers,
+  youtubeEnshitification
 ];
 
 // For article list page
 export function getArticlesMeta() {
-  return allArticles.map(({ slug, title, author, date, category, readTime, excerpt }) => ({
+  return allArticles.reverse().map(({ slug, title, author, date, category, readTime, excerpt }) => ({
     slug,
     title,
     author,

@@ -7,6 +7,8 @@ import {
   TrendingUp,
   Calendar,
   Award,
+  Instagram,
+  Youtube,
 } from "lucide-react";
 import { Metadata } from 'next';
 
@@ -135,6 +137,9 @@ export default function YouTubeShowcase() {
     },
   ];
 
+  const instaURL = "https://www.instagram.com/dailycodesnacks/"
+  const instaIds = ['DQrN1hdkb2Q', 'DQc9wjhkx1d', 'DQZgXOzgWHs', 'DQZgHn8AX-L', 'DQULxSoAb15', 'DQG6J21ERsH', 'DQG54Tfkb8D', 'DQCI_hMkZsF', 'DP_TJePEZkW', 'DP8vHurEVb2']
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section with Channel Banner */}
@@ -171,6 +176,15 @@ export default function YouTubeShowcase() {
                 <a href="https://www.youtube.com/@Jaivardhan_Deshwal" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg shadow-red-900/50 flex items-center gap-2 font-semibold">
                   <Bell className="w-5 h-5" />
                   Subscribe
+                </a>
+                <a
+                  href={instaURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-700 rounded-full hover:from-pink-700 hover:to-purple-800 transition-all duration-200 shadow-lg shadow-purple-900/50 flex items-center gap-2 font-semibold"
+                >
+                  <Instagram className="w-5 h-5" />
+                  Follow
                 </a>
                 <a
                   href="https://www.youtube.com/@Jaivardhan_Deshwal"
@@ -251,6 +265,15 @@ export default function YouTubeShowcase() {
 
           {/* Content */}
 
+          <div className="flex gap-4 mb-8 border-b border-purple-900/30">
+            <button
+              className={`px-6 py-3 font-semibold transition-all duration-200 border-b-2 flex items-center gap-2 border-red-500 text-red-400`}
+            >
+              <Youtube className="w-5 h-5" />
+              YouTube Videos
+            </button>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 
             {[
@@ -280,6 +303,62 @@ export default function YouTubeShowcase() {
 
 
           </div>
+
+
+          {/* Instagram Content */}
+          <div className="flex gap-4 mb-8 border-b border-purple-900/30">
+            <button
+              className={`px-6 py-3 font-semibold transition-all duration-200 border-b-2 flex items-center gap-2 border-pink-500 text-pink-400`}
+            >
+              <Instagram className="w-5 h-5" />
+              Instagram Posts
+            </button>
+          </div>
+
+          <section className="relative" aria-label="Instagram posts gallery">
+            {/* Background glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-pink-500/5 to-purple-500/5 rounded-3xl blur-xl pointer-events-none" aria-hidden="true"></div>
+
+            <div className="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {instaIds.map((id, index) => (
+                <article
+                  key={id}
+                  className="group relative animate-fade-in-up"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  {/* Animated border gradient */}
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm group-hover:blur pointer-events-none" aria-hidden="true"></div>
+
+                  {/* Card container */}
+                  <div className="relative bg-slate-900/90 backdrop-blur-sm border border-purple-500/20 rounded-3xl overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-purple-500/25">
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" aria-hidden="true"></div>
+
+                    {/* Instagram embed */}
+                    <div className="aspect-[4/5] relative overflow-hidden">
+                      <iframe
+                        title={`Instagram Post ${index + 1}`}
+                        className="w-full h-full"
+                        src={`https://www.instagram.com/p/${id}/embed`}
+                        frameBorder="0"
+                        scrolling="no"
+                        allowTransparency={true}
+                        loading="lazy"
+                      ></iframe>
+                    </div>
+
+                    {/* Overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" aria-hidden="true"></div>
+                  </div>
+
+                  {/* Floating index badge */}
+                  <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" aria-hidden="true">
+                    {index + 1}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
 
