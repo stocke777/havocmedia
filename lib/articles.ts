@@ -6,7 +6,8 @@ import youtubeInstagram from "@/content/articles/youtube-vs-instagram-what-actua
 import viralReel from "@/content/articles/why-one-viral-reel-beats-twenty-average-ones";
 import tenKFollowers from "@/content/articles/why-10k-followers-can-be-better-than-100k";
 import youtubeEnshitification from "@/content/articles/how-youtube-enshitification-actually-works";
-
+import consumerBehaviour from "@/content/articles/consumer-behaviour-long-form-vs-short-form-content";
+import digitalMarketing from "@/content/articles/digital-marketing-evolution-in-the-age-of-ai-content";
 
 export const allArticles = [
   whyBacklinking,
@@ -16,7 +17,9 @@ export const allArticles = [
   youtubeInstagram,
   viralReel,
   tenKFollowers,
-  youtubeEnshitification
+  youtubeEnshitification,
+  consumerBehaviour,
+  digitalMarketing
 ];
 
 // For article list page
